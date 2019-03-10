@@ -1,9 +1,13 @@
+.navContainer {
+  grid-area: navbar;
+}
+
 .nav {
   font-size: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 5rem;
+  height: $navbar_height;
 
   &__item {
 

@@ -1,0 +1,47 @@
+.statements {
+  margin: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.statement {
+
+  word-spacing: 1rem;
+
+  a, a:visited {
+    color: $terminal-link;
+    text-decoration: none;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__gt {
+    margin-right: 1rem;
+  }
+
+
+  &__input {
+    display: inline-block;
+    margin-bottom: .7rem;
+    position: relative;
+  }
+
+  &__return {
+    color: $return_color;
+  }
+
+  &__caret {
+    display: inline-block;
+    height: 2rem;
+    width: 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+  }
+}

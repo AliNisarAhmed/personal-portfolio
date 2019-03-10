@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; 
+  scroll-behavior: smooth;
 }
 
 *, *::after, *::before {
@@ -10,4 +11,5 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: $background;
 }

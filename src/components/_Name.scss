@@ -1,4 +1,8 @@
 .name {
+  grid-area: landing;
+
+  font-family: Monaco, monospace;
+
   font-size: $name_font_size;
   display: flex;
   align-items: baseline;
@@ -20,10 +24,6 @@
     height: $name_font_size * 1.7;
     margin-left: .3rem;
     opacity: .8; 
-  }
-
-  .animate {
-    animation: caret 1s step-end infinite;
   }
 }
 

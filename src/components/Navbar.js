@@ -10,6 +10,9 @@ export default class Navbar extends Component {
     return (
       <nav ref={this.navbar} className="nav">
         <div className="nav__item">
+          <a href="#about">About</a>
+        </div>
+        <div className="nav__item">
           <a href="#projects">Projects</a>
         </div>
         <div className="nav__item">

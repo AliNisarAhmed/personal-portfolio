@@ -1,3 +1,7 @@
 @keyframes caret {
   50% { background-color: transparent; }
 }
+
+.animate {
+  animation: caret 1s step-end infinite;
+}

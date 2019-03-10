@@ -1,8 +1,10 @@
-@import './base/base';
 @import './base/variables';
+@import './base/base';
 
 
 @import '../components/layout';
 @import './utility/animations';
 @import '../components/Navbar';
 @import '../components/Name';
+@import '../components/Terminal';
+@import '../components/Statements';
