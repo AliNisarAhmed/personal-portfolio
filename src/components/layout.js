@@ -13,9 +13,8 @@ import '../styles/index.scss';
 import Header from "./header"
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="container">
     <Header></Header>
-    <p>Layout header</p>
     { children }
   </div>
 )

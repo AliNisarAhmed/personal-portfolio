@@ -8,12 +8,14 @@ export default class Navbar extends Component {
   
   render() {
     return (
-      <div>
-        <nav ref={this.navbar}>
+      <nav ref={this.navbar} className="nav">
+        <div className="nav__item">
           <a href="#projects">Projects</a>
+        </div>
+        <div className="nav__item">
           <a href="#contact">Contact</a>
-        </nav>
-      </div>
+        </div>
+      </nav>
     )
   }
 }

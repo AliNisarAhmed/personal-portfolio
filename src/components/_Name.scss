@@ -1,0 +1,29 @@
+.name {
+  font-size: $name_font_size;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
+
+  & > * {
+    margin: 0;
+  }
+
+  &__gt {
+    font-size: 220%;
+    font-weight: bold;
+    margin-right: 1rem; 
+  }
+
+  &__cursor {
+    background-color: rgba($color-primary, .8);
+    width: $name_font_size;
+    height: $name_font_size * 1.7;
+    margin-left: .3rem;
+    opacity: .8; 
+  }
+
+  .animate {
+    animation: caret 1s step-end infinite;
+  }
+}
+

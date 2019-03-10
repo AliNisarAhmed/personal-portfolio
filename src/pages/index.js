@@ -1,10 +1,11 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Name from '../components/Name';
 
 const IndexPage = () => (
   <Layout>
-    <p>I am the children of layout</p>
+    <Name />
   </Layout>
 )
 

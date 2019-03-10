@@ -1,4 +1,41 @@
-a {
-  color: yellow;
-  text-decoration: none;
+.nav {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+
+  &__item {
+
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    height: 3rem;
+  }
+  
+  a:hover {
+    opacity: .6;
+
+    &::after {
+      width: 100%;
+    }
+  }
+  
+  a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2rem;
+    width: 0;
+    background-color: $color-primary;
+    height: 1rem;
+    transition: width .2s .2s;
+  }
 }
