@@ -3,12 +3,238 @@
 export default [
   {
     title: 'Zilch',
-    description: 'A 2-player Dice game built with React Hooks & Styled-Components',
+    description: `<p>A 2-player Dice game built with React (using the new state management technique, <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>) & CSS-in-JS library <a href="https://www.styled-components.com/" targt="_blank">styled-components</a>. I played this game long ago on a flash-player based gaming site but the game does not work now, so I decided to implement my own JS version.</p>`,
     skills: ['React', 'React Hooks', 'styled-components'],
     image: '',
     links: {
-      preview: '',
-      github: '',
+      preview: "https://zilch-react.netlify.com/",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/zilch-reactjs'
+      },
     }
-  }
+  },
+  {
+    title: 'Simon',
+    description: `<p>Browser implementation of <a href="https://en.wikipedia.org/wiki/Simon_(game)" target="_blank">Simon</a> game, based off <a href="https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/build-a-simon-game" target="_blank">this</a> challenge.</p>`,
+    skills: ['React', 'TypeScript', 'Sass'],
+    image: '',
+    links: {
+      preview: 'http://simon-react-tsc.netlify.com/',
+      github: {
+        React: 'https://github.com/AliNisarAhmed/simon-game-react'
+      }
+    }
+  },
+  {
+    title: "Anonymous Message Board",
+    description: `<p>A message board where anyone can discuss whatever they want, freely. I implemented the API as well as the Front-end as final <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/anonymous-message-board" target="_blank">challenge</a> of FreeCodeCamp's (FCC) Information Security and Quality Assurance Certification, which led to FCC's Full Stack Certification.</p>`,
+    skills: ["React", "React-Router", "Materialize CSS", "Express", "Mongoose", "ParcelJS", "Axios", "dayjs"],
+    image: "",
+    links: {
+      preview: "https://common-seagull.glitch.me/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/fcc-anon-msg-board"
+      }
+    }
+  },
+  {
+    title: 'Wikipedia Viewer',
+    description: `<p>Search for relevant articles from Wikipedia using the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">wikimedia API</a>. I have implemented the same project in Vanilla JS, Vue & <a href="https://elm-lang.org/" target="_blank">Elm</a>. This was my first project with both Vue & Elm where I had to make Http requests and handle JSON response, using Axios in Vue, and <a href="https://package.elm-lang.org/packages/elm/json/latest/" target="_blank">JSON Decoders</a> in Elm.</p>`,
+    skills: ["ES6", "Vue", "Elm", "CSS3"],
+    image: '',
+    links: {
+      preview: "https://wiki-viewer-elm.netlify.com/",
+      github: {
+        JS: "https://github.com/AliNisarAhmed/wiki-viewer-vanilla",
+        Vue: "https://github.com/AliNisarAhmed/wiki-viewer-vue",
+        Elm: "https://github.com/AliNisarAhmed/wiki-viewer-elm",
+      }
+    }
+  },
+  {
+    title: 'Hangman',
+    description: `<p>Classic Hangman Game made with React. I also implemented the same project in TypeScript (React), Vue and Elm (This was my first Elm project)</p>`,
+    skills: ["React", "TypeScript", "CSS3", "Vue", "Elm"],
+    image: '',
+    links: {
+      preview: "https://hangman-vue.netlify.com/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/Hangman-React",
+        "React-tsc": "https://github.com/AliNisarAhmed/hangman-react-tsc",
+        Vue: "https://github.com/AliNisarAhmed/hangman-vue",
+        Elm: "https://github.com/AliNisarAhmed/hangman-elm",
+      }
+    }
+  },
+  {
+    title: "Memory game",
+    description: `<p>Classic Memory (Uncover matching numbers) Game, implemented with React, using Sass for styling</p>`,
+    skills: ['React', "Sass"],
+    image: "",
+    links: {
+      preview: "https://github.com/AliNisarAhmed/memory-game-React",
+      github: {
+        React: "https://inspiring-hawking-627275.netlify.com/"
+      }
+    }
+  },
+  {
+    title: "Exercise Tracker - API & Front-end",
+    description: `<p>Exercise Tracker API, which keeps record of each user's exercise data, Last <a href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker" target="_blank">Challenge</a> FCC's APIs & MicroServices Certification. Later I re-implemented the same API with PostgreSQL as DB (using knexJS as SQL query builder).`,
+    skills: ["Express", "MongoDB", "Mongoose", "PostgreSQL", "knexJS"],
+    image: "",
+    links: {
+      preview: "https://solstice-gibbon.glitch.me/",
+      github: {
+        MongoDB: "https://github.com/AliNisarAhmed/FCC-exercise-tracker",
+        PostgreSQL: "https://github.com/AliNisarAhmed/fcc-exercise-tracker-pg",
+      }
+    }
+  },
+  {
+    title: "Issue Tracker - API & Front-end",
+    description: `<p>Built as <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/issue-tracker" target="_blank">part</a> of FCC's Information Security & Quality Assurance Certification, I initially implemented the project with MongoDB (using Mongoose as ODM), later on I re-implemented the API with PostgreSQL & knexJS. Front-end built with React & <a href="https://reach.tech/router" target="_blank">Reach-Router</a></p>`,
+    skills: ["Express", "MongoDB", "Mongoose", "PostgreSQL", "knexJS", "React", "Reach Router"],
+    image: "",
+    links: {
+      preview: "https://fern-blizzard-1.glitch.me/",
+      github: {
+        MongoDB: "https://github.com/AliNisarAhmed/FCC-Issue-tracker",
+        PostgreSQL: "https://github.com/AliNisarAhmed/fcc-issue-tracker-pg",
+      }
+    }
+  },
+  {
+    title: "Stock Price Checker",
+    description: `<p>Users can fetch latest Stock Prices from <a href="https://iextrading.com/developer/" target="_blank">IEX API</a>. Also stores Likes by unique users (based on their IP). Uses fetch API to make Http requests, with MongoDB (<a href="https://mlab.com/" target="_blank">mLab</a>) as Database</p>`,
+    skills: ["Express", "MongoDB", "Mongoose"],
+    image: "",
+    links: {
+      preview: "https://mud-draw.glitch.me/",
+      github: {
+        MongoDB: "https://github.com/AliNisarAhmed/fcc-stockprice-checker",
+      }
+    }
+  },
+  {
+    title: "Tic Tac Toe",
+    description: `<p>Two player Tic Tac Toe game, built with Vue, as well as React & Redux (this was my first Vue project as well as React-Redux project). The style of the app is based on this tutorial, however, the code is mine.</p>`,
+    skills: ["React", "Redux", "Vue"],
+    image: "",
+    links: {
+      preview: "https://tictactoe-vue.netlify.com/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/tictactoe-reactredux",
+        Vue: "https://github.com/AliNisarAhmed/vue-TicTacToe",
+      }
+    }
+  },
+  {
+    title: "Pomodoro Clock",
+    description: `<p>A Timer implementing <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a> of time management, based off <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock" target="_blank">this</a> final challenge of FCC's Front-end Libraries Certification</p>`,
+    skills: ["React", "Sass"],
+    image: "",
+    links: {
+      preview: "https://pomodoro-clock-react.netlify.com/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/fcc-pomodoro-clock"
+      }
+    }
+  },
+  {
+    title: "Calculator",
+    description: `<p>JavaScript Calculator, a <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator" target="_blank">challenge</a> from FCC's Front-end Libraries Certification</p>`,
+    skills: ["React", "Sass"],
+    image: "",
+    links: {
+      preview: "https://calculator-react-sass.netlify.com/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/FCC-Calculator-React-Sass"
+      }
+    }
+  },
+  {
+    title: "Drum Machine",
+    description: `Sound Playing Drum Machine (responsive to both Keyboard and Clicks), built as part of <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine" target="_blank">this</a> Challenge of FCC's Front-end Libraries Certification`,
+    skills: ["React", "Sass"],
+    image: "",
+    links: {
+      preview: "https://codesandbox.io/s/q4z3vvk0pj",
+      github: {
+        React: "https://github.com/AliNisarAhmed/fcc-drum-machine"
+      }
+    }
+  },
+  {
+    title: "Markdown Previewer",
+    description: `<p>Preview Markdown as you write, based off <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer" target="_blank">this</a> challenge of FCC's Front-end Libraries Certification`,
+    skills: ["React", "marked (library)", "CSS3"],
+    image: "",
+    links: {
+      preview: "https://codesandbox.io/s/418y20p67",
+      github: {
+        React: "https://codesandbox.io/s/418y20p67"
+      }
+    }
+  },
+  {
+    title: "Random Quote Machine",
+    description: `<p>Get a new Random quote from an assortment of my favorite quotes I have collected over the years during my readings. First <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine" target="_blank">challenge</a> of FCC's Front-end Libraries Certification.</p>`,
+    skills: ["React"],
+    image: "",
+    links: {
+      preview: "https://csb-kjp8901v7-liukrptkou.now.sh/",
+      github: {
+        React: "https://codesandbox.io/s/kjp8901v7"
+      }
+    }
+  },
+  {
+    title: "Technical Documentation Page",
+    description: `<p>Mock of React JS Documentation, built with HTML5 and Sass for this <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page" target="_blank">challenge</a> of FCC's Responsive Web Design Certification</p>`,
+    skills: ["HTML", "Sass"],
+    image: "",
+    links: {
+      preview: "https://codepen.io/AA87/pen/YOqNgM/",
+      github: {
+        HTML5: "https://codepen.io/AA87/pen/YOqNgM/",
+      }
+    }
+  },
+  {
+    title: "D3 - Treemap Diagram",
+    description: `<p>A Treemap Diagram showing Top selling movies in multiple genres. Area of each rectangle is proportional to the sales. Last <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram" target="_blank">Challenge</a> of my hard-earned FCC's Data Visualization Certfication</p>`,
+    skills: ["d3.js"],
+    image: "",
+    links: {
+      preview: "https://codesandbox.io/s/01zywq60l",
+      github: {
+        HTML5: "https://github.com/AliNisarAhmed/fcc-d3-Treemap-withMenu",
+      }
+    }
+  },
+  {
+    title: "D3 - Choropleth Map",
+    description: `<p>Zoomable Map of United States depicting percentage of adults with a Bachelor's Degree or higher. <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map" target="_blank">Part</a> of FCC's Data Visualization Challenge</p>`,
+    skills: ["d3.js"],
+    image: "",
+    links: {
+      preview: "https://codesandbox.io/s/93r9kl8qxw",
+      github: {
+        HTML5: "https://github.com/AliNisarAhmed/fcc-heatmap",
+      }
+    }
+  },
+  {
+    title: "D3 - Heat Map",
+    description: `<p>Visualization of Average Surface temperature data of the planet as Heat Map using <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map" target="_blank">d3.js</a>, as <a href="" target="_blank">part</a> of FCC's Data Visualization Certification</p>`,
+    skills: ["d3.js"],
+    image: "",
+    links: {
+      preview: "https://codesandbox.io/s/py23m8yjzj",
+      github: {
+        HTML5: "https://github.com/AliNisarAhmed/fcc-heatmap",
+      }
+    }
+  },
 ]
