@@ -1,0 +1,37 @@
+.projects {
+  
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      border-bottom: 2rem solid purple;
+      content: "";
+      position: absolute;
+      top: 130%;
+      left: 50%;
+      width: 6rem;
+      opacity: .6;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+  &__card {
+    min-width: 25rem;
+    border: 1px solid red;
+    height: 25rem;
+
+    &:hover {
+      // transform: scale(1.2);
+      // z-index: 2;
+    }
+  }
+}

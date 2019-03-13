@@ -4,7 +4,7 @@
   border: 1px solid black;
 
   display: grid;
-  grid-template-rows: $navbar_height 95vh 100vh;
+  grid-template-rows: $navbar_height 95vh 100vh minmax(100vh, auto);
   grid-template-areas: 
     "navbar"
     "landing"

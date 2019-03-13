@@ -1,11 +1,11 @@
-
+import zilch from '../images/zilch.jpg';
 
 export default [
   {
     title: 'Zilch',
     description: `<p>A 2-player Dice game built with React (using the new state management technique, <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>) & CSS-in-JS library <a href="https://www.styled-components.com/" targt="_blank">styled-components</a>. I played this game long ago on a flash-player based gaming site but the game does not work now, so I decided to implement my own JS version.</p>`,
     skills: ['React', 'React Hooks', 'styled-components'],
-    image: '',
+    image: zilch,
     links: {
       preview: "https://zilch-react.netlify.com/",
       github: {
@@ -17,7 +17,7 @@ export default [
     title: 'Simon',
     description: `<p>Browser implementation of <a href="https://en.wikipedia.org/wiki/Simon_(game)" target="_blank">Simon</a> game, based off <a href="https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/build-a-simon-game" target="_blank">this</a> challenge.</p>`,
     skills: ['React', 'TypeScript', 'Sass'],
-    image: '',
+    image: zilch,
     links: {
       preview: 'http://simon-react-tsc.netlify.com/',
       github: {
@@ -29,7 +29,7 @@ export default [
     title: "Anonymous Message Board",
     description: `<p>A message board where anyone can discuss whatever they want, freely. I implemented the API as well as the Front-end as final <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/anonymous-message-board" target="_blank">challenge</a> of FreeCodeCamp's (FCC) Information Security and Quality Assurance Certification, which led to FCC's Full Stack Certification.</p>`,
     skills: ["React", "React-Router", "Materialize CSS", "Express", "Mongoose", "ParcelJS", "Axios", "dayjs"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://common-seagull.glitch.me/",
       github: {
@@ -41,7 +41,7 @@ export default [
     title: 'Wikipedia Viewer',
     description: `<p>Search for relevant articles from Wikipedia using the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">wikimedia API</a>. I have implemented the same project in Vanilla JS, Vue & <a href="https://elm-lang.org/" target="_blank">Elm</a>. This was my first project with both Vue & Elm where I had to make Http requests and handle JSON response, using Axios in Vue, and <a href="https://package.elm-lang.org/packages/elm/json/latest/" target="_blank">JSON Decoders</a> in Elm.</p>`,
     skills: ["ES6", "Vue", "Elm", "CSS3"],
-    image: '',
+    image: zilch,
     links: {
       preview: "https://wiki-viewer-elm.netlify.com/",
       github: {
@@ -55,7 +55,7 @@ export default [
     title: 'Hangman',
     description: `<p>Classic Hangman Game made with React. I also implemented the same project in TypeScript (React), Vue and Elm (This was my first Elm project)</p>`,
     skills: ["React", "TypeScript", "CSS3", "Vue", "Elm"],
-    image: '',
+    image: zilch,
     links: {
       preview: "https://hangman-vue.netlify.com/",
       github: {
@@ -70,7 +70,7 @@ export default [
     title: "Memory game",
     description: `<p>Classic Memory (Uncover matching numbers) Game, implemented with React, using Sass for styling</p>`,
     skills: ['React', "Sass"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://github.com/AliNisarAhmed/memory-game-React",
       github: {
@@ -82,7 +82,7 @@ export default [
     title: "Exercise Tracker - API & Front-end",
     description: `<p>Exercise Tracker API, which keeps record of each user's exercise data, Last <a href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker" target="_blank">Challenge</a> FCC's APIs & MicroServices Certification. Later I re-implemented the same API with PostgreSQL as DB (using knexJS as SQL query builder).`,
     skills: ["Express", "MongoDB", "Mongoose", "PostgreSQL", "knexJS"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://solstice-gibbon.glitch.me/",
       github: {
@@ -95,7 +95,7 @@ export default [
     title: "Issue Tracker - API & Front-end",
     description: `<p>Built as <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/issue-tracker" target="_blank">part</a> of FCC's Information Security & Quality Assurance Certification, I initially implemented the project with MongoDB (using Mongoose as ODM), later on I re-implemented the API with PostgreSQL & knexJS. Front-end built with React & <a href="https://reach.tech/router" target="_blank">Reach-Router</a></p>`,
     skills: ["Express", "MongoDB", "Mongoose", "PostgreSQL", "knexJS", "React", "Reach Router"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://fern-blizzard-1.glitch.me/",
       github: {
@@ -108,7 +108,7 @@ export default [
     title: "Stock Price Checker",
     description: `<p>Users can fetch latest Stock Prices from <a href="https://iextrading.com/developer/" target="_blank">IEX API</a>. Also stores Likes by unique users (based on their IP). Uses fetch API to make Http requests, with MongoDB (<a href="https://mlab.com/" target="_blank">mLab</a>) as Database</p>`,
     skills: ["Express", "MongoDB", "Mongoose"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://mud-draw.glitch.me/",
       github: {
@@ -120,7 +120,7 @@ export default [
     title: "Tic Tac Toe",
     description: `<p>Two player Tic Tac Toe game, built with Vue, as well as React & Redux (this was my first Vue project as well as React-Redux project). The style of the app is based on this tutorial, however, the code is mine.</p>`,
     skills: ["React", "Redux", "Vue"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://tictactoe-vue.netlify.com/",
       github: {
@@ -133,7 +133,7 @@ export default [
     title: "Pomodoro Clock",
     description: `<p>A Timer implementing <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro Technique</a> of time management, based off <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock" target="_blank">this</a> final challenge of FCC's Front-end Libraries Certification</p>`,
     skills: ["React", "Sass"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://pomodoro-clock-react.netlify.com/",
       github: {
@@ -145,7 +145,7 @@ export default [
     title: "Calculator",
     description: `<p>JavaScript Calculator, a <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator" target="_blank">challenge</a> from FCC's Front-end Libraries Certification</p>`,
     skills: ["React", "Sass"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://calculator-react-sass.netlify.com/",
       github: {
@@ -157,7 +157,7 @@ export default [
     title: "Drum Machine",
     description: `Sound Playing Drum Machine (responsive to both Keyboard and Clicks), built as part of <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine" target="_blank">this</a> Challenge of FCC's Front-end Libraries Certification`,
     skills: ["React", "Sass"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codesandbox.io/s/q4z3vvk0pj",
       github: {
@@ -169,7 +169,7 @@ export default [
     title: "Markdown Previewer",
     description: `<p>Preview Markdown as you write, based off <a href="https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer" target="_blank">this</a> challenge of FCC's Front-end Libraries Certification`,
     skills: ["React", "marked (library)", "CSS3"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codesandbox.io/s/418y20p67",
       github: {
@@ -193,7 +193,7 @@ export default [
     title: "Technical Documentation Page",
     description: `<p>Mock of React JS Documentation, built with HTML5 and Sass for this <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page" target="_blank">challenge</a> of FCC's Responsive Web Design Certification</p>`,
     skills: ["HTML", "Sass"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codepen.io/AA87/pen/YOqNgM/",
       github: {
@@ -205,7 +205,7 @@ export default [
     title: "D3 - Treemap Diagram",
     description: `<p>A Treemap Diagram showing Top selling movies in multiple genres. Area of each rectangle is proportional to the sales. Last <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram" target="_blank">Challenge</a> of my hard-earned FCC's Data Visualization Certfication</p>`,
     skills: ["d3.js"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codesandbox.io/s/01zywq60l",
       github: {
@@ -217,7 +217,7 @@ export default [
     title: "D3 - Choropleth Map",
     description: `<p>Zoomable Map of United States depicting percentage of adults with a Bachelor's Degree or higher. <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map" target="_blank">Part</a> of FCC's Data Visualization Challenge</p>`,
     skills: ["d3.js"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codesandbox.io/s/93r9kl8qxw",
       github: {
@@ -229,7 +229,7 @@ export default [
     title: "D3 - Heat Map",
     description: `<p>Visualization of Average Surface temperature data of the planet as Heat Map using <a href="https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map" target="_blank">d3.js</a>, as <a href="" target="_blank">part</a> of FCC's Data Visualization Certification</p>`,
     skills: ["d3.js"],
-    image: "",
+    image: zilch,
     links: {
       preview: "https://codesandbox.io/s/py23m8yjzj",
       github: {
