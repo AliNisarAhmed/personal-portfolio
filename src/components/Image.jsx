@@ -13,7 +13,7 @@ export default function Image(props) {
                 relativePath
                 name
                 childImageSharp {
-                  sizes(maxWidth: 400) {
+                  sizes(maxWidth: 400, maxHeight: 400) {
                     ...GatsbyImageSharpSizes
                   }
                 }
@@ -33,6 +33,8 @@ export default function Image(props) {
           <Img
             alt={props.alt}
             sizes={imageSizes}
+            className="projects__image"
+            backgroundColor={true}
           />
         );
       }}

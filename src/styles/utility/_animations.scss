@@ -5,3 +5,24 @@
 .animate {
   animation: caret 1s step-end infinite;
 }
+
+
+@keyframes slideFromAbove {
+  from {
+    top: -50%;
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes slideFromBelow {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 50%;
+  }
+}
