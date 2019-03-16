@@ -27,7 +27,7 @@ export default [
   {
     title: "Anonymous Message Board",
     description: `<p>A message board where anyone can discuss whatever they want, freely. I implemented the API as well as the Front-end as final <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/anonymous-message-board" target="_blank">challenge</a> of FreeCodeCamp's (FCC) Information Security and Quality Assurance Certification, which led to FCC's Full Stack Certification.</p>`,
-    skills: ["React", "React-Router", "Materialize CSS", "Express", "Mongoose"],
+    skills: ["React", "React-Router", "Express", "Mongoose", "Materialize CSS"],
     image: "anon.png",
     links: {
       preview: "https://common-seagull.glitch.me/",
@@ -59,7 +59,7 @@ export default [
       preview: "https://hangman-vue.netlify.com/",
       github: {
         React: "https://github.com/AliNisarAhmed/Hangman-React",
-        "React-tsc": "https://github.com/AliNisarAhmed/hangman-react-tsc",
+        TS: "https://github.com/AliNisarAhmed/hangman-react-tsc",
         Vue: "https://github.com/AliNisarAhmed/hangman-vue",
         Elm: "https://github.com/AliNisarAhmed/hangman-elm",
       }
@@ -136,7 +136,7 @@ export default [
     links: {
       preview: "https://codesandbox.io/s/01zywq60l",
       github: {
-        HTML5: "https://github.com/AliNisarAhmed/fcc-d3-Treemap-withMenu",
+        HTML: "https://github.com/AliNisarAhmed/fcc-d3-Treemap-withMenu",
       }
     }
   },
@@ -148,7 +148,7 @@ export default [
     links: {
       preview: "https://codesandbox.io/s/93r9kl8qxw",
       github: {
-        HTML5: "https://github.com/AliNisarAhmed/fcc-heatmap",
+        HTML: "https://github.com/AliNisarAhmed/fcc-heatmap",
       }
     }
   },
@@ -160,7 +160,7 @@ export default [
     links: {
       preview: "https://codesandbox.io/s/py23m8yjzj",
       github: {
-        HTML5: "https://github.com/AliNisarAhmed/fcc-heatmap",
+        HTML: "https://github.com/AliNisarAhmed/fcc-heatmap",
       }
     }
   },
@@ -244,7 +244,7 @@ export default [
     links: {
       preview: "https://codesandbox.io/s/883vnox858",
       github: {
-        HTML5: "https://github.com/AliNisarAhmed/PureReact-Slack",
+        HTML: "https://github.com/AliNisarAhmed/PureReact-Slack",
       }
     }
   },

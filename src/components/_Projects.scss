@@ -1,5 +1,7 @@
 .projects {
   
+  position: relative;
+
   &__heading {
     display: flex;
     flex-flow: column;
@@ -49,7 +51,7 @@
         height: 100%;
         width: 100%;
         background-color: white;
-        opacity: .9;
+        opacity: .95;
         z-index: 3;
       }
 
@@ -118,7 +120,7 @@
       color: $color-primary;
       font-size: 170%;
       cursor: pointer;
-      padding: 1rem 2rem;
+      padding: .5rem 2rem;
       opacity: 1;
       border-radius: 1rem;
       transition: background-color .2s;
@@ -130,12 +132,95 @@
     }
   }
 
-  &__modal {
-    position: absolute;
-    top: 2rem;
-    bottom: 2rem;
-    left: 2rem;
-    right: 2rem;
-    z-index: 10;
+  // &__modal {
+  //   position: absolute;
+  //   top: 1rem;
+  //   bottom: 1rem;
+  //   left: 50%;
+  //   z-index: 10;
+  //   background-color: purple;
+  //   opacity: .8;
+  //   width: 45rem;
+  //   transform: translateX(-50%);
+  //   height: 95%;
+  // }
+
+  // &__modalOverlay {
+  //   background-color: rgba(0, 0, 0, .9);
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  // }
+
+  &__hide {
+    display: none;
+  }
+}
+
+.modal__imageContainer {
+  max-width: 45rem;
+  max-height: 45rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: .5rem solid $color-primary;
+}
+
+.modal__image {
+  width: 45rem;
+}
+
+.ReactModal__Content {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: $background;
+  color: $color-primary;
+  padding: 1rem;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+
+.modal {
+
+  &__title {
+
+  }
+
+  &__skill {
+
+  }
+
+  &__description {
+
+  }
+
+  &__link, &__link:visited {
+    display: inline-block;
+    border: 2px solid $color-primary;
+    outline: none;
+    text-decoration: none;
+    font-size: 150%;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    transition: background-color .2s;
+  }
+
+  &__link:hover, &__link:focus {
+    background-color: $color-primary;
+    color: white;
   }
 }

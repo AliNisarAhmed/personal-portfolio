@@ -1,18 +1,52 @@
 import React from 'react';
 import Modal from 'react-modal';
+import classNames from 'classnames';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import { faReact, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import Image from './Image';
+import ModalImage from './ModalImage';
 
-// Modal.setAppElement('#app')
+
+Modal.defaultStyles = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.9)'
+  },
+  content: {
+    position: 'absolute',
+    top: '0',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    bottom: '0',
+    border: '1px solid black',
+    WebkitOverflowScrolling: 'touch',
+    borderRadius: '4px',
+    outline: 'none',
+    height: "100vh",
+    width: '50rem',
+    display: 'flex',
+    flexFlow: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  }
+}
 
 export default class Projects extends React.Component {
 
   state = {
-    modalIsOpen: false
+    modalIsOpen: false,
+    selectedImage: null,
   }
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true });
+  openModal = (e) => {
+    this.setState({ modalIsOpen: true, selectedImage: e.target.name });
   }
 
   closeModal = () => {
@@ -20,6 +54,13 @@ export default class Projects extends React.Component {
   }
 
   render () {
+    const cardClass = classNames({
+      projects__card: true,
+      projects__hide: this.state.modalIsOpen
+    });
+    const selectedProject = this.props.projects.find(project => project.title === this.state.selectedImage);
+    const keys = Object.keys(selectedProject.links.github);
+    console.log(keys);
     return (
       <section className="projects" id="projects">
         <div className="projects__heading">
@@ -28,8 +69,7 @@ export default class Projects extends React.Component {
         </div>
         <div className="projects__container">
           {this.props.projects.map(project => (
-            <>
-              <div className="projects__card">
+              <div className={cardClass}>
                 <Image 
                   filename={project.image}
                   alt={project.title}
@@ -50,21 +90,47 @@ export default class Projects extends React.Component {
                     </p>
                   </div>
                   <div className="projects__info__bottom">
-                    <button className="projects__info__button" onClick={this.openModal}>See More</button>
+                    <button className="projects__info__button" name={project.title} onClick={this.openModal}>See More</button>
                   </div>
                 </div>
               </div>
-              <Modal
-                isOpen={this.state.modalIsOpen}
-                onRequestClose={this.closeModal}
-                className="projects__modal"
-                contentLabel="Project Details"
-              >
-                  {project.title}
-              </Modal>
-            </>
           ))}
-        </div>
+          </div>
+          <Modal
+          isOpen={this.state.modalIsOpen}
+          onRequestClose={this.closeModal}
+          contentLabel="Project Details"
+          closeTimeoutMS={200}
+        > 
+        {selectedProject && (
+          <>
+            <div className="modal__imageContainer">
+              <ModalImage filename={selectedProject.image} alt={selectedProject.title}/>
+            </div>
+            <h5 className="modal__title">{selectedProject.title}</h5>
+              {selectedProject.skills.map(skill => (
+                <span className="modal__skill">{skill}</span>
+              ))}
+            <div className="modal__description" dangerouslySetInnerHTML={{__html: selectedProject.description}}></div>
+            <a href={selectedProject.links.preview} rel="noopener noreferrer" target="_blank" className="modal__link"><FontAwesomeIcon icon={faReact}/>See App</a>
+            {
+              keys.length === 1 
+              ? (
+                <a href={selectedProject.links.github[keys[0]]} rel="noopener noreferrer" target="_blank" className="modal__link"><FontAwesomeIcon icon={faGithub}/>See Code</a> 
+              )
+              : (
+                keys.map(key => {
+                  if (key === "HTML") {
+                    return (<a href={selectedProject.links.github[key]} rel="noopener noreferrer" target="_blank" className="modal__link"><FontAwesomeIcon icon={faGithub}/>See Code</a>);
+                  } else {
+                    return (<a href={selectedProject.links.github[key]} rel="noopener noreferrer" target="_blank" className="modal__link"><FontAwesomeIcon icon={faGithub}/>See {key} Code</a>);
+                  }
+                })
+              )
+            }
+          </>  
+        )}
+        </Modal>
       </section>
     );
   }
