@@ -3,24 +3,7 @@
   position: relative;
 
   &__heading {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
-    h2 {
-      text-align: center;
-      font-size: 4rem;
-      position: relative;
-      margin-top: .5rem;
-      margin-bottom: 1rem;
-    }
-    .underline {
-      width: 50%;
-      height: 2px;
-      background-color: $color-primary;
-      opacity: .6;
-      margin-bottom: 5rem;
-    }
+   
   }
 
   &__container {
@@ -196,16 +179,42 @@
 
 .modal {
 
-  &__title {
+  &__titleContainer {
+    display: flex;
+    // justify-content: space-between;
+    width: 100%;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
 
+  &__title {
+    font-size: 220%;
+    align-self: flex-start;
+    margin: 1rem auto 1rem 1rem;
   }
 
   &__skill {
+    align-self: center;
+    border: .2rem solid $color-primary;
+    padding: .4rem 1rem;
+    border-radius: .8rem;
+    font-size: 120%;
 
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
   &__description {
+    font-size: 120%;
 
+    a {
+      @include textLinks;
+    }
+  }
+
+  &__linkContainer {
+    display: flex;
   }
 
   &__link, &__link:visited {
@@ -214,13 +223,36 @@
     outline: none;
     text-decoration: none;
     font-size: 150%;
-    padding: .5rem 1rem;
+    padding: .5rem .8rem;
     border-radius: 1rem;
     transition: background-color .2s;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   &__link:hover, &__link:focus {
     background-color: $color-primary;
     color: white;
+  }
+
+  &__close {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 2.5rem;
+    maring: 0;
+    padding: 0;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 5px;
+    fill: $color-primary;
+
+    &:hover, &:active {
+      color: purple;
+    }
   }
 }

@@ -1,0 +1,45 @@
+.contact {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+
+  &__heading {
+    margin-top: 2rem;
+  }
+
+  &__text {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  &__links {
+    font-size: 240%;
+    
+    
+    & span {
+      
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover, &:focus {
+        transform: translateY(.3rem);
+      }
+    }
+  }
+
+  &__link {
+    color: $color-primary;
+    font-size: 200%;
+
+    &:hover, &:focus {
+      color: black;
+    } 
+  }
+
+  &__copyright {
+    margin-bottom: 2rem;
+  }
+}

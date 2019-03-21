@@ -1,5 +1,8 @@
 @import './base/variables';
 @import './base/base';
+@import './mixins/textLinks';
+
+@import './reusables/sectionHeading';
 
 
 @import '../components/layout';
@@ -9,3 +12,4 @@
 @import '../components/Terminal';
 @import '../components/Statements';
 @import '../components/Projects';
+@import '../components/Contact';
