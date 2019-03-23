@@ -2,7 +2,7 @@
   width: 85%;
   max-width: 120rem;
   margin: 0 auto;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   display: grid;
   grid-template-rows: $navbar_height 95vh 100vh minmax(100vh, auto) 100vh;
@@ -10,5 +10,6 @@
     "navbar"
     "landing"
     "about"
+    "projects"
     "contact";
 }

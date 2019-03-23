@@ -8,7 +8,8 @@ class Name extends React.Component {
   state = {
     text: "",
     name: "Ali Nisar Ahmed",
-    caretAnimation: true
+    caretAnimation: true,
+    textAnimation: false,
   }
 
   async componentDidMount () {
@@ -19,7 +20,7 @@ class Name extends React.Component {
 
   componentDidUpdate () {
     if (this.state.text.length === this.state.name.length && !this.state.caretAnimation) {
-      this.setState({ caretAnimation: true });
+      this.setState({ caretAnimation: true, textAnimation: true });
     } else {
       this.enterDigitToName();
     }
@@ -42,16 +43,36 @@ class Name extends React.Component {
     const cursorClass = classNames({
       animate: caretAnimation,
       name__cursor: true
+    });
+
+    const textClass1 = classNames({
+      name__text: true,
+      'name__text--1': this.state.textAnimation 
+    })
+
+    const textClass2 = classNames({
+      name__text: true,
+      'name__text--2': this.state.textAnimation 
+    })
+
+    const textClass3 = classNames({
+      name__text: true,
+      'name__text--3': this.state.textAnimation 
     })
 
     return (
       <div className="name">
-        <span className="name__gt">&gt;</span>
-        <h1 className="name__text">{text}</h1>
-        <span 
-          className={cursorClass}
-        >
-        </span>
+        <div className="name__typed">
+          <span className="name__gt">&gt;</span>
+          <h1 className="name__heading">{text}</h1>
+          <span 
+            className={cursorClass}
+          >
+          </span>
+        </div>
+        <p className={textClass1}>I am an Electrical Engineer, who loves computer programming. I am a self-taught JavaScript developer.</p>
+        <p className={textClass2}>I live in Edmonton, AB, Canada.</p>
+        <p className={textClass3}>Welcome to my portfolio. Check out my work below</p> 
       </div>
     );
   }

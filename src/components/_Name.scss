@@ -2,11 +2,20 @@
   grid-area: landing;
 
   font-family: Monaco, monospace;
-
   font-size: $name_font_size;
+
   display: flex;
-  align-items: baseline;
-  flex-flow: row wrap;
+  justify-content: center;
+  flex-flow: column;
+
+  position: relative;
+
+  &__typed {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: baseline;
+  }
 
   & > * {
     margin: 0;
@@ -25,5 +34,31 @@
     margin-left: .3rem;
     opacity: .8; 
   }
+
+  &__text {
+    display: none;
+    font-size: 70%;
+    position: absolute;
+    opacity: 0;
+    
+    &--1 {
+      display: block;
+      top: 50%;
+      animation: slideFromLeft 1s 1s both;
+    }
+    
+    &--2 {
+      display: block;
+      top: 65%;
+      animation: slideFromLeft 1s 2s both;
+    }
+
+    &--3 {
+      display: block;
+      top: 85%;
+      animation: slideFromLeft 1s 3s both;
+    }
+  }
+  
 }
 
