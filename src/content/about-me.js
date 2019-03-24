@@ -8,8 +8,10 @@ export default [
     return: `
     [
       "<a href="mailto:ali.nisar87@gmail.com">ali.nisar87@gmail.com</a>",
-      "<a href="https://www.linkedin.com/in/ali-ahmed-390483b8/" target="_blank">LinkedIn</a>",
       "<a href="https://www.github.com/AliNisarAhmed" target="_blank">github</a>"
+      "<a href="https://www.linkedin.com/in/ali-ahmed-390483b8/" target="_blank">LinkedIn</a>",
+      "<a href="https://www.twitter.com/AliNisarAhmed" target="_blank">Twitter</a>",
+      "<a href="https://www.facebook.com/Ali.AhmedNisar" target="_blank">Facebook</a>"
     ]`
   },
   {

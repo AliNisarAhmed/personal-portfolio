@@ -30,11 +30,13 @@ Modal.defaultStyles = {
     borderRadius: '4px',
     outline: 'none',
     height: "100vh",
-    width: '60rem',
-    display: 'flex',
-    flexFlow: 'column',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    maxHeight: '100vh', 
+    maxWidth: '60rem',
+    minWidth: '20rem',
+    // display: 'flex',
+    // flexFlow: 'column',
+    // justifyContent: 'space-evenly',
+    // alignItems: 'center',
   }
 }
 
@@ -59,9 +61,7 @@ export default class Projects extends React.Component {
       projects__hide: this.state.modalIsOpen
     });
     const selectedProject = this.props.projects.find(project => project.title === this.state.selectedImage);
-    console.log(selectedProject);
     const keys = selectedProject && Object.keys(selectedProject.links.github);
-    console.log(keys);
     return (
       <section className="projects" id="projects">
         <div className="project__heading section__heading">
@@ -97,7 +97,9 @@ export default class Projects extends React.Component {
               </div>
           ))}
         </div>
+
         {/* Modal */}
+        
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
@@ -112,6 +114,8 @@ export default class Projects extends React.Component {
 
             <div className="modal__titleContainer">
               <h5 className="modal__title">{selectedProject.title}</h5>
+            </div>
+            <div className="modal__skillContainer">
               {selectedProject.skills.map(skill => (
                 <span className="modal__skill">{skill}</span>
               ))}

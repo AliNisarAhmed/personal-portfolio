@@ -117,7 +117,7 @@ export default [
   },
   {
     title: "Tic Tac Toe",
-    description: `<p>Two player Tic Tac Toe game, built with Vue, as well as React & Redux (this was my first Vue project as well as React-Redux project). The style of the app is based on this tutorial, however, the code is mine.</p>`,
+    description: `<p>Two player Tic Tac Toe game, built with Vue, as well as React & Redux (this was my first Vue project as well as React-Redux project). The style of the app is based on <a href="https://scotch.io/tutorials/building-a-tic-tac-toe-game-with-vue-2-part-1" target="_blank">this</a> tutorial, however, the code is mine.</p>`,
     skills: ["React", "Redux", "Vue"],
     image: "tictactoe.png",
     links: {
@@ -161,6 +161,18 @@ export default [
       preview: "https://codesandbox.io/s/py23m8yjzj",
       github: {
         HTML: "https://github.com/AliNisarAhmed/fcc-heatmap",
+      }
+    }
+  },
+  {
+    title: 'Product Landing Page',
+    description: `<p>Landing page of a computer manufacturer, styled with Sass. A <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page" target="_blank">challenge</a> in FCC's Responsive Web Design certification.</p>`,
+    skills: ['HTML5', "Sass"],
+    image: 'productLanding.png',
+    links: {
+      preview: "https://product-landing-sass.netlify.com/",
+      github: {
+        HTML: "https://github.com/AliNisarAhmed/fcc-landingpage"
       }
     }
   },

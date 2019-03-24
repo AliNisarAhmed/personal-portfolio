@@ -82,6 +82,7 @@
     .separator {
       font-size: 140%;
       font-weight: bold;
+      color: black;
     }
 
   }
@@ -117,39 +118,18 @@
     }
   }
 
-  // &__modal {
-  //   position: absolute;
-  //   top: 1rem;
-  //   bottom: 1rem;
-  //   left: 50%;
-  //   z-index: 10;
-  //   background-color: purple;
-  //   opacity: .8;
-  //   width: 45rem;
-  //   transform: translateX(-50%);
-  //   height: 95%;
-  // }
-
-  // &__modalOverlay {
-  //   background-color: rgba(0, 0, 0, .9);
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  // }
-
   &__hide {
     display: none;
   }
 }
 
 .modal__imageContainer {
-  max-width: 45rem;
-  max-height: 45rem;
+  width: 45rem;
+  height: 45rem;
   border-radius: 1rem;
   overflow: hidden;
   border: .5rem solid $color-primary;
+
 }
 
 .modal__image {
@@ -157,12 +137,14 @@
 }
 
 .ReactModal__Content {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: minmax(45rem, 4fr) 1fr 1fr 2fr 1fr;
+  justify-items: center;
   padding: 0;
   background-color: $background;
   color: $color-primary;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 .ReactModal__Overlay {
@@ -182,25 +164,38 @@
 .modal {
 
   &__titleContainer {
-    display: flex;
-    // justify-content: space-between;
+    display: block;
+    text-align: center;
     width: 100%;
-    align-self: stretch;
-    flex-wrap: wrap;
   }
 
   &__title {
-    font-size: 220%;
+    font-size: 120%;
     align-self: flex-start;
-    margin: 1rem auto 1rem 1rem;
+    @include tablet {
+      font-size: 100%;
+    }
+
+    @include mobile-bg {
+      font-size: 80%;
+    }
+
+    @include mobile-sm {
+      font-size: 70%;
+    }
+  }
+
+  &__skillContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
   }
 
   &__skill {
     align-self: center;
-    border: .2rem solid $color-primary;
-    padding: .4rem 1rem;
-    border-radius: .8rem;
-    font-size: 120%;
+    font-size: 50%;
+    font-style: italic;
+    letter-spacing: .1em;
 
     &:not(:last-child) {
       margin-right: 2rem;
@@ -208,7 +203,22 @@
   }
 
   &__description {
-    font-size: 120%;
+    font-size: 80%;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 70%;
+    }
+
+    @include mobile-bg {
+      font-size: 60%;
+    }
+
+    @include mobile-sm {
+      font-size: 50%;
+    }
 
     a {
       @include textLinks;
@@ -220,15 +230,31 @@
   }
 
   &__link, &__link:visited {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid $color-primary;
     outline: none;
     text-decoration: none;
-    font-size: 150%;
     padding: .5rem .8rem;
     border-radius: 1rem;
     transition: background-color .2s;
     text-decoration: none;
+    font-size: 60%;
+
+    & svg {
+      margin-right: .5rem;
+    }
+
+    &:first-child {
+      background: $color-primary;
+      color: white;
+
+      &:hover {
+        color: $color-primary;
+        background: white;
+      }
+    }
 
     &:not(:last-child) {
       margin-right: 1rem;

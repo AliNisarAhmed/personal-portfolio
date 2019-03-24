@@ -1,11 +1,20 @@
 .statements {
   margin: 1rem;
-  font-size: 1.6rem;
   color: white;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
+
+  @include tablet {
+    font-size: 80%;
+  }
+  @include mobile-bg {
+    font-size: 70%;
+  }
+  @include mobile-sm {
+    font-size: 60%;
+  }
 }
 
 .statement {

@@ -1,12 +1,10 @@
 @mixin textLinks {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: underline;
   color: $color-link;
   outline: none;
 
   &:hover, &:focus {
-    text-decoration: underline;
-    font-weight: bold;
-    color: rgba(purple, 1);
+    color: rgba(purple, .7);
   }
 }

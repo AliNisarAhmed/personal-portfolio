@@ -13,7 +13,7 @@ export default function Image(props) {
                 relativePath
                 name
                 childImageSharp {
-                  sizes {
+                  sizes (maxWidth: 400) {
                     ...GatsbyImageSharpSizes
                   }
                 }

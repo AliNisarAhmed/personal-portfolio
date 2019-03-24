@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faTwitterSquare, faGithubSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact({ contacts }) {
@@ -14,7 +14,10 @@ export default function Contact({ contacts }) {
       <p className="contact__text">I am looking for my first job as a web developer. If you like my work, please contact me!</p>
       <div className="contact__links">
         <span>
-          <a href="mailto:ali.nisar87@gmail.com" className="contact__link"><FontAwesomeIcon icon={faEnvelopeSquare}></FontAwesomeIcon></a>
+          <a href="#" className="contact__link"><FontAwesomeIcon icon={faPhoneSquare} title="825 993 6766"></FontAwesomeIcon></a>
+        </span>
+        <span>
+          <a href="mailto:ali.nisar87@gmail.com" className="contact__link"><FontAwesomeIcon icon={faEnvelopeSquare} title="ali.nisar87@gmail.com"></FontAwesomeIcon></a>
         </span>
         <span>
           <a href={contacts[1].link} className="contact__link"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
@@ -30,7 +33,7 @@ export default function Contact({ contacts }) {
         </span>
       </div>
       <div className="contact__copyright">
-        Made by Ali Nisar Ahmed &copy; 2019
+        Made by Ali Nisar Ahmed &copy; 2019, inspired by <a href="https://www.justinchi.me">Justin</a>
       </div>
     </section>
   )
