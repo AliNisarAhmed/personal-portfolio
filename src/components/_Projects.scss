@@ -5,7 +5,7 @@
   position: relative;
 
   &__heading {
-   
+   margin-top: 2rem;
   }
 
   &__container {
@@ -130,15 +130,20 @@
   overflow: hidden;
   border: .5rem solid $color-primary;
 
+  @include mobile-sm {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 .modal__image {
-  width: 45rem;
+  width: 100%;
+  height: 100%;
 }
 
 .ReactModal__Content {
   display: grid;
-  grid-template-rows: minmax(45rem, 4fr) 1fr 1fr 2fr 1fr;
+  grid-template-rows: minmax(auto, 4fr) 1fr 1fr 3fr 1fr;
   justify-items: center;
   padding: 0;
   background-color: $background;
@@ -167,6 +172,7 @@
     display: block;
     text-align: center;
     width: 100%;
+    align-self: center;
   }
 
   &__title {
@@ -207,6 +213,7 @@
     text-align: center;
     text-rendering: optimizeLegibility;
     margin-bottom: 1rem;
+    align-self: center;
 
     @include tablet {
       font-size: 70%;
@@ -241,6 +248,10 @@
     transition: background-color .2s;
     text-decoration: none;
     font-size: 60%;
+    align-self: center;
+
+    @include mobile-sm {
+    }
 
     & svg {
       margin-right: .5rem;

@@ -11,22 +11,8 @@
   position: relative;
 
   &__typed {
-    position: absolute;
-    top: 20%;
-    display: flex;
-    align-items: baseline;
-
-    @include tablet {
-      font-size: 80%;
-    }
-
-    @include mobile-bg {
-      font-size: 60%;
-    }
-
-    @include mobile-sm {
-      font-size: 40%;
-    }
+    @include typed;
+    top: 15%;
   }
 
   & > * {
@@ -61,30 +47,36 @@
     display: none;
     font-size: 70%;
     position: absolute;
-    opacity: 0;
 
     @include tablet {
       font-size: 50%;
     }
+
+    @include mobile-bg {
+      font-size: 40%;
+    }
     
     &--1 {
       display: block;
-      top: 50%;
-      animation: slideFromLeft 1s 1s both;
+      top: 35%;
     }
     
     &--2 {
       display: block;
-      top: 65%;
-      animation: slideFromLeft 1s 2s both;
+      top: 45%;
     }
 
     &--3 {
       display: block;
-      top: 75%;
-      animation: slideFromLeft 1s 3s both;
+      top: 55%;
     }
   }
-  
 }
 
+.hide {
+  display: none;
+}
+
+.positionClass {
+  top: 65%;
+}

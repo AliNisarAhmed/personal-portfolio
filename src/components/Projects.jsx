@@ -33,10 +33,6 @@ Modal.defaultStyles = {
     maxHeight: '100vh', 
     maxWidth: '60rem',
     minWidth: '20rem',
-    // display: 'flex',
-    // flexFlow: 'column',
-    // justifyContent: 'space-evenly',
-    // alignItems: 'center',
   }
 }
 
@@ -70,7 +66,7 @@ export default class Projects extends React.Component {
         </div>
         <div className="projects__container">
           {this.props.projects.map(project => (
-              <div className={cardClass}>
+              <div className={cardClass} key={project.title}>
                 <Image 
                   filename={project.image}
                   alt={project.title}
@@ -79,8 +75,8 @@ export default class Projects extends React.Component {
                   <div className="projects__info__top">
                     <h5 className="projects__title">{project.title}</h5>
                     <p className="projects__skills">{project.skills.map((skill, i, arr) => (
-                      <React.Fragment>
-                      <span className="skill">
+                      <React.Fragment key={i}>
+                        <span className="skill">
                           {skill}
                         </span>
                         <span className="separator">

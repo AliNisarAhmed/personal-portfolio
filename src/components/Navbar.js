@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class Navbar extends Component {
   componentDidMount() {
     this.navbar = React.createRef();
-    console.log(this.navbar);
   }
   
   render() {

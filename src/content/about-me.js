@@ -16,7 +16,7 @@ export default [
   },
   {
     input: 'Ali.resume',
-    return: '"download resume"'
+    return: '"<a rel="noopener" href="/Ali_Ahmed_Resume.pdf" target="_blank">aliahmed.pdf</a>"'
   },
   {
     input: 'Ali.education',

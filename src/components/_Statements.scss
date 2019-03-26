@@ -7,13 +7,13 @@
   align-items: flex-start;
 
   @include tablet {
-    font-size: 80%;
+    font-size: 90%;
   }
   @include mobile-bg {
-    font-size: 70%;
+    font-size: 80%;
   }
   @include mobile-sm {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 

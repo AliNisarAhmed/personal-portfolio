@@ -30,14 +30,3 @@
     opacity: 1;
   }
 }
-
-@keyframes slideFromLeft {
-  from {
-    left: -50%;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
