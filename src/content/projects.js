@@ -30,7 +30,7 @@ export default [
     skills: ["React", "React-Router", "Express", "Mongoose", "Materialize CSS"],
     image: "anon.png",
     links: {
-      preview: "https://common-seagull.glitch.me/",
+      preview: "https://morning-bayou-52638.herokuapp.com/",
       github: {
         React: "https://github.com/AliNisarAhmed/fcc-anon-msg-board"
       }
