@@ -9,6 +9,7 @@
   flex-flow: column;
 
   position: relative;
+  color: $color-secondary;
 
   &__typed {
     @include typed;
@@ -47,6 +48,7 @@
     display: none;
     font-size: 70%;
     position: absolute;
+    color: $color-tertiary;
 
     @include tablet {
       font-size: 50%;

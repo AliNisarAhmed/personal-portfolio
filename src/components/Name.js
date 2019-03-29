@@ -90,9 +90,9 @@ class Name extends React.Component {
           >
           </span>
         </div>
-        <p className={textClass1}>I am a self-taught JavaScript developer. I love programming.</p>
+        <p className={textClass1}>"I am a self-taught JavaScript developer. I love programming.</p>
         <p className={textClass2}>I live in Edmonton, AB, Canada.</p>
-        <p className={textClass3}>Welcome to my portfolio. Check out my work below</p>
+        <p className={textClass3}>Welcome to my portfolio. Check out my work below"</p>
         <div className={typed2}>
           <span className={gt2}>&gt;</span>
           <span className={cursor2Class}></span>

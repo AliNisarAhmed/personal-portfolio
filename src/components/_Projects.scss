@@ -6,6 +6,7 @@
 
   &__heading {
    margin-top: 2rem;
+   color: $color-secondary;
   }
 
   &__container {
@@ -62,7 +63,7 @@
   }
 
   &__title {
-    color: black;
+    color: $color-secondary;
     opacity: .9;
     font-size: 250%;
     margin: 0 .5rem;
@@ -178,6 +179,8 @@
   &__title {
     font-size: 120%;
     align-self: flex-start;
+    color: $color-secondary;
+
     @include tablet {
       font-size: 100%;
     }

@@ -6,21 +6,25 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
+import { Helmet } from 'react-helmet'
 
 import '../styles/index.scss';
 
-import Header from "./header"
+import icon32 from '../images/haskell.svg';
+
+import Header from "./header";
 
 const Layout = ({ children }) => (
   <div className="container" id="app">
+    <Helmet 
+      title="Ali's Portfolio"
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${icon32}` }
+      ]}
+    />
     <Header></Header>
     { children }
   </div>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

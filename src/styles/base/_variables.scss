@@ -1,4 +1,10 @@
 $color-primary: purple;
+// $color-secondary: #747fe0;
+$color-secondary: #282c32;
+// $color-secondary: rgb(94,80,134);
+
+$color-tertiary: rgba($color-secondary, .7);
+
 $background: #f6f9fc;
 $color-link: rgba(purple, 1);
 
