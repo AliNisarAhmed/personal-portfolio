@@ -1,6 +1,30 @@
 
 export default [
   {
+    title: 'Note',
+    description: `<p>A Full-stack note-taking app. Built with React, TypeScript, Mongoose, and Express, using JWT for authentication. Primarily made to learn Docker Containers, the Database and the app are separate Docker containers ready to be deployed. Redesign and more features will be added soon.</p>`,
+    skills: ['React', 'TypeScript', 'Mongoose', 'Express', 'Materialize CSS', "Docker"],
+    image: "note-app.png",
+    links: {
+      preview: "https://peaceful-temple-33603.herokuapp.com/",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/note-taking-app'
+      },
+    }
+  },
+  {
+    title: 'Portfolio',
+    description: `<p>This web page! built with the amazing <a href="https://http://gatsbyjs.org/" target="_blank">Gatsby JS</a>. Styled with SCSS, and layout made with CSS Grid. The design of the portfolio was inspired by <a href="https://www.justinchi.me/">Justin's</a> design.</p>`,
+    skills: ['React', 'Gatsby JS', 'SCSS', "CSS Grid"],
+    image: "portfolio.png",
+    links: {
+      preview: "https://aliahmed.netlify.com/",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/personal-portfolio'
+      },
+    }
+  },
+  {
     title: 'Zilch',
     description: `<p>A 2-player Dice game built with React (using the new state management technique, <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>) & CSS-in-JS library <a href="https://www.styled-components.com/" targt="_blank">styled-components</a>. I played this game long ago on a flash-player based gaming site but the game does not work now, so I decided to implement my own JS version.</p>`,
     skills: ['React', 'styled-components'],
@@ -27,18 +51,6 @@ export default [
   {
     title: "Anonymous Message Board",
     description: `<p>A message board where anyone can discuss whatever they want, freely. I implemented the API as well as the Front-end as final <a href="https://learn.freecodecamp.org/information-security-and-quality-assurance/information-security-and-quality-assurance-projects/anonymous-message-board" target="_blank">challenge</a> of FreeCodeCamp's (FCC) Information Security and Quality Assurance Certification, which led to FCC's Full Stack Certification.</p>`,
-    skills: ["React", "React-Router", "Express", "Mongoose", "Materialize CSS"],
-    image: "anon.png",
-    links: {
-      preview: "https://morning-bayou-52638.herokuapp.com/",
-      github: {
-        React: "https://github.com/AliNisarAhmed/fcc-anon-msg-board"
-      }
-    }
-  },
-  {
-    title: "Portfolio (this page)",
-    description: `<p>Made with <a href="" target="_blank">Gatsby</a> Static Site Generator, design inspired by <a href="" target="_blank">Justin</a></p>`,
     skills: ["React", "React-Router", "Express", "Mongoose", "Materialize CSS"],
     image: "anon.png",
     links: {
