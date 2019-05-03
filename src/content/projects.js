@@ -37,6 +37,18 @@ export default [
     }
   },
   {
+    title: "Portfolio (this page)",
+    description: `<p>Made with <a href="" target="_blank">Gatsby</a> Static Site Generator, design inspired by <a href="" target="_blank">Justin</a></p>`,
+    skills: ["React", "React-Router", "Express", "Mongoose", "Materialize CSS"],
+    image: "anon.png",
+    links: {
+      preview: "https://morning-bayou-52638.herokuapp.com/",
+      github: {
+        React: "https://github.com/AliNisarAhmed/fcc-anon-msg-board"
+      }
+    }
+  },
+  {
     title: 'Wikipedia Viewer',
     description: `<p>Search for relevant articles from Wikipedia using the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">wikimedia API</a>. I have implemented the same project in Vanilla JS, Vue & <a href="https://elm-lang.org/" target="_blank">Elm</a>. This was my first project with both Vue & Elm where I had to make Http requests and handle JSON response, using Axios in Vue, and <a href="https://package.elm-lang.org/packages/elm/json/latest/" target="_blank">JSON Decoders</a> in Elm.</p>`,
     skills: ["JS", "Vue", "Elm", "CSS3"],
