@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Navbar extends Component {
   componentDidMount() {
     this.navbar = React.createRef();
   }
-  
+
   render() {
     return (
       <nav ref={this.navbar} className="nav">
@@ -18,6 +18,6 @@ export default class Navbar extends Component {
           <a href="#contact">Contact</a>
         </div>
       </nav>
-    )
+    );
   }
 }

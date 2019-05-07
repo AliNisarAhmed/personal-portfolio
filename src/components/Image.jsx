@@ -1,6 +1,6 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import Img from "gatsby-image";
+import { StaticQuery, graphql } from "gatsby";
 
 export default function Image(props) {
   return (
@@ -22,12 +22,13 @@ export default function Image(props) {
           }
         }
       `}
-
       render={data => {
         const image = data.images.edges.find(n => {
           return n.node.relativePath.includes(props.filename);
         });
-        if (!image) { return null; }
+        if (!image) {
+          return null;
+        }
         const imageSizes = image.node.childImageSharp.sizes;
         return (
           <Img
@@ -39,5 +40,5 @@ export default function Image(props) {
         );
       }}
     />
-  )
+  );
 }
