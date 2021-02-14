@@ -7,7 +7,7 @@ export default [
     input: 'Ali.contactInfo',
     return: `
     [
-      "<a href="mailto:ali.nisar87@gmail.com">ali.nisar87@gmail.com</a>",
+      "<a href="mailto:ali.ahmed@hey.com">ali.ahmed@hey.com</a>",
       "<a href="https://www.github.com/AliNisarAhmed" target="_blank">github</a>"
       "<a href="https://www.linkedin.com/in/ali-ahmed-390483b8/" target="_blank">LinkedIn</a>",
       "<a href="https://www.twitter.com/AliNisarAhmed" target="_blank">Twitter</a>",
@@ -22,21 +22,21 @@ export default [
     input: 'Ali.education',
     return: `
     [
-      "BE Electrical Engineering, NED University, Karachi, Pakistan"
+      "BE Electrical Engineering, NED University of Engineering & Technology, Karachi, Pakistan"
       <br/>,
-      "MBA Marketing & Finance, IBA Karachi, Pakistan",
+      "MBA Marketing & Finance, Institute of Business Administration, Karachi, Pakistan",
     ]`
   },
   {
     input: "Ali.skills",
-    return: `["JavaScript", "React", "Vue", "Elm", "Sass", "Redux", "D3", "Jest", "Mocha & Chai", "Express", "Mongoose", "knexJS", "PostgreSQL", "CSS Grid", "Flexbox"]`
+    return: `["JavaScript", "TypeScript", "React", "React Native", "Redux", "C#", ".Net Core", "Haskell", "Elm", "Sass", "D3", "Jest", "React Testing Library", "Express JS", "MongoDB", "SQL Server", "PostgreSQL", "CSS Grid", "Flexbox"]`
   },
   {
     input: 'Ali.interests',
-    return: `["Functional programming", "logic problems", "learning new stuff", "bridge", "football"]`
+    return: `["Functional Programming", "Reading Books", "learning new tech", "Bridge", "Football"]`
   },
   {
     input: "Ali.currentlyLearning",
-    return: `["Haskell", "GraphQL", "SVG", "TypeScript"]`
+    return: `["UI/UX Design Fundamentals", "Elixir & Phoenix Framework"]`
   }
 ]

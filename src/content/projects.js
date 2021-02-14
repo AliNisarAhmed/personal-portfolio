@@ -1,8 +1,32 @@
 
 export default [
   {
+    title: 'Game of Life',
+    description: `<p>Game of life implementation, with two types of rules (default and Highlife). Built with Elm (A purely functional programming language for front-end development) and styled with elm-ui.</p>`,
+    skills: ['Elm', 'Elm-ui'],
+    image: "gol.png",
+    links: {
+      preview: "https://ecstatic-lewin-c9e2db.netlify.app/",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/game-of-life'
+      },
+    }
+  },
+  {
+    title: 'Periodic Table',
+    description: `<p>A keyboard accessbile Periodic Table with features such as search, legend, temperature slider to show each element state, group and period highlighting. Styled with CSS Grid and Flexbox.</p>`,
+    skills: ['React', 'TypeScript', 'Sass', 'Gatsby JS'],
+    image: "periodic-table.png",
+    links: {
+      preview: "https://tableperiodic.netlify.app/",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/periodic-table-ts-gatsby'
+      },
+    }
+  },
+  {
     title: 'Note',
-    description: `<p>A Full-stack note-taking app. Built with React, TypeScript, Mongoose, and Express, using JWT for authentication. Primarily made to learn Docker Containers, the Database and the app are separate Docker containers ready to be deployed. Redesign and more features will be added soon.</p>`,
+    description: `<p>A Full-stack note-taking app. Built with React, TypeScript, Mongoose, and Express, using JWT for authentication. Primarily made to learn Docker Containers, the Database and the app are separate Docker containers ready to be deployed.</p>`,
     skills: ['React', 'TypeScript', 'Mongoose', 'Express', 'Materialize CSS', "Docker"],
     image: "note-app.png",
     links: {

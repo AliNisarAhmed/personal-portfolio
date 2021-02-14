@@ -59,7 +59,7 @@ export default function Contact({ contacts }) {
         </span>
       </div>
       <div className="contact__copyright">
-        Made by Ali Nisar Ahmed &copy; 2019, inspired by{" "}
+        Made by Ali Nisar Ahmed &copy; {`${new Date().getFullYear().toString()}`}, inspired by{" "}
         <a href="https://www.justinchi.me">Justin</a>
       </div>
     </section>

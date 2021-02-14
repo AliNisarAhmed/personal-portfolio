@@ -94,7 +94,7 @@ class Name extends React.Component {
           <span className={cursorClass} />
         </div>
         <p className={textClass1}>
-          "Hi! I am a self-taught JavaScript developer. I love programming.
+          "Hi! I am a self-taught Web & Mobile applications Developer. I love programming.
         </p>
         <p className={textClass2}>I live in Edmonton, AB, Canada.</p>
         <p className={textClass3}>
