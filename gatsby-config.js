@@ -1,21 +1,19 @@
-const path = require('path');
-
 module.exports = {
-  pathPrefix: "/personal-portfolio",
   siteMetadata: {
-    title: `Ali's Portfolio`,
+    title: "my-portfolio-2",
   },
   plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`,
   ],
 };
