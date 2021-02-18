@@ -2,7 +2,7 @@
 export default [
   {
     title: 'Game of Life',
-    description: `<p>Game of life implementation, with two types of rules (default and Highlife). Built with Elm (A purely functional programming language for front-end development) and styled with elm-ui.</p>`,
+    description: `<p>(Work In Progress: design & UI improvements) Game of life implementation, with two types of rules (default and Highlife). Built with Elm (A purely functional programming language for front-end development) and styled with elm-ui. .</p>`,
     skills: ['Elm', 'Elm-ui'],
     image: "gol.png",
     links: {
