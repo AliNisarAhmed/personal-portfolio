@@ -1,8 +1,20 @@
 
 export default [
   {
+    title: 'Knight Movement Trainer',
+    description: `<p>Chess Knight Movement Trainer app. Take the knight all the way to the end of the board while avoiding the enemy Queen. (Current work in progrss: Responsiveness, animations and design).</p>`,
+    skills: ['Elm', 'Elm-ui'],
+    image: "knightyknight.png",
+    links: {
+      preview: "https://knightyknight.netlify.app/",
+      github: {
+        Elm: 'https://github.com/AliNisarAhmed/knighty-knight'
+      },
+    }
+  },
+  {
     title: 'Game of Life',
-    description: `<p>(Work In Progress: design & UI improvements) Game of life implementation, with two types of rules (default and Highlife). Built with Elm (A purely functional programming language for front-end development) and styled with elm-ui. .</p>`,
+    description: `<p>Game of life implementation, with two types of rules (default and Highlife). Built with Elm (A purely functional programming language for front-end development) and styled with elm-ui. (Current work in progress: design & UI improvements)</p>`,
     skills: ['Elm', 'Elm-ui'],
     image: "gol.png",
     links: {
