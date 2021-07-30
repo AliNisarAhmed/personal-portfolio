@@ -2,7 +2,7 @@
 export default [
   {
     title: 'Knight Movement Trainer',
-    description: `<p>Chess Knight Movement Trainer app. Take the knight all the way to the end of the board while avoiding the enemy Queen. (Current work in progrss: Responsiveness, animations and design).</p>`,
+    description: `<p>Chess Knight Movement Trainer app. Take the knight all the way to the end of the board while avoiding the enemy Queen. <a href="https://builtwithelm.co/?q=knight" target="_blank" ref="noopener noreferrer">Featured</a> on <a target="_blank" rel="noopener noreferrer" href="https://builtwithelm.co">Built with Elm</a>.</p>`,
     skills: ['Elm', 'Elm-ui'],
     image: "knightyknight.png",
     links: {
