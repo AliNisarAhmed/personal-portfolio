@@ -7,11 +7,10 @@ export default [
     input: 'Ali.contactInfo',
     return: `
     [
-      "<a href="mailto:ali.ahmed@hey.com">ali.ahmed@hey.com</a>",
+      "<a href="mailto:me@aliahmed.dev">me@aliahmed.dev</a>",
       "<a href="https://www.github.com/AliNisarAhmed" target="_blank">github</a>"
       "<a href="https://www.linkedin.com/in/ali-ahmed-390483b8/" target="_blank">LinkedIn</a>",
-      "<a href="https://www.twitter.com/AliNisarAhmed" target="_blank">Twitter</a>",
-      "<a href="https://www.facebook.com/Ali.AhmedNisar" target="_blank">Facebook</a>"
+      "<a href="https://www.twitter.com/AliNisarAhmed" target="_blank">Twitter</a>"
     ]`
   },
   {
@@ -33,7 +32,7 @@ export default [
   },
   {
     input: 'Ali.interests',
-    return: `["Functional Programming", "Reading Books", "learning new tech", "Bridge", "Football"]`
+    return: `["Functional Programming", "Reading Books", "learning new tech", "Bridge", "Chess", "Football"]`
   },
   {
     input: "Ali.currentlyLearning",

@@ -20,8 +20,8 @@ export default function Contact({ contacts }) {
         <div className="underline" />
       </div>
       <p className="contact__text">
-        I'm always open to a good conversation! Let's talk about JavaScript,
-        Programming, and life in general!
+        I'm always open to a good conversation! Let's talk about programming,
+        football, and life in general!
       </p>
       <div className="contact__links">
         <span>
@@ -50,11 +50,6 @@ export default function Contact({ contacts }) {
         <span>
           <a href={contacts[3].link} className="contact__link">
             <FontAwesomeIcon icon={faTwitterSquare} />
-          </a>
-        </span>
-        <span>
-          <a href={contacts[4].link} className="contact__link">
-            <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
         </span>
       </div>
