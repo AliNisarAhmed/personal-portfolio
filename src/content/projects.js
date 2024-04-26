@@ -1,14 +1,26 @@
 
 export default [
   {
-    title: 'Knight Movement Trainer',
-    description: `<p>Chess Knight Movement Trainer app. Take the knight all the way to the end of the board while avoiding the enemy Queen. <a href="https://builtwithelm.co/?q=knight" target="_blank" ref="noopener noreferrer">Featured</a> on <a target="_blank" rel="noopener noreferrer" href="https://builtwithelm.co">Built with Elm</a>.</p>`,
-    skills: ['Elm', 'Elm-ui'],
+    title: 'Net Worth Calculator',
+    description: `<p>Track your net worth and convert it to different currencies</p>`,
+    skills: ['Node', 'React', 'TypeScript', 'TailwindCSS', 'Redis'],
     image: "knightyknight.png",
     links: {
       preview: "https://knightyknight.netlify.app/",
       github: {
         Elm: 'https://github.com/AliNisarAhmed/knighty-knight'
+      },
+    }
+  },
+  {
+    title: 'Knight Movement Trainer',
+    description: `<p>Chess Knight Movement Trainer app. Take the knight all the way to the end of the board while avoiding the enemy Queen. <a href="https://builtwithelm.co/?q=knight" target="_blank" ref="noopener noreferrer">Featured</a> on <a target="_blank" rel="noopener noreferrer" href="https://builtwithelm.co">Built with Elm</a>.</p>`,
+    skills: ['Elm', 'Elm-ui'],
+    image: "net-worth-calc.png",
+    links: {
+      preview: "https://networth-calc.fly.dev",
+      github: {
+        React: 'https://github.com/AliNisarAhmed/net-worth-calc'
       },
     }
   },
