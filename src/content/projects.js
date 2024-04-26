@@ -6,9 +6,9 @@ export default [
     skills: ['Node', 'React', 'TypeScript', 'TailwindCSS', 'Redis'],
     image: "knightyknight.png",
     links: {
-      preview: "https://knightyknight.netlify.app/",
+      preview: "https://networth-calc.fly.dev",
       github: {
-        Elm: 'https://github.com/AliNisarAhmed/knighty-knight'
+        React: 'https://github.com/AliNisarAhmed/net-worth-calc'
       },
     }
   },
@@ -18,9 +18,9 @@ export default [
     skills: ['Elm', 'Elm-ui'],
     image: "net-worth-calc.png",
     links: {
-      preview: "https://networth-calc.fly.dev",
+      preview: "https://knightyknight.netlify.app/",
       github: {
-        React: 'https://github.com/AliNisarAhmed/net-worth-calc'
+        Elm: 'https://github.com/AliNisarAhmed/knighty-knight'
       },
     }
   },
